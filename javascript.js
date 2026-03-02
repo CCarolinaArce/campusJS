@@ -18,6 +18,4 @@
 // console.log(x--)
 // console.log(x)
 
-
 const x = Number("25")
-
