@@ -8,3 +8,10 @@ numeroCuadrado = arreglo.map(cuadrado) // la funcion map recibe una función com
 
 console.log(numeroCuadrado);
 
+const mapa = new Map();
+
+mapa.set('identificacion', '1000');
+mapa.set(['identificacion'], '1001')
+mapa.set({nombre: 'Pepe'}, '1002');
+
+console.log(mapa);
