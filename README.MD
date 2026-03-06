@@ -72,3 +72,6 @@ console.log('Edad: ' + edad);
 console.log('Genero: ' + genero);
 });
 }
+
+
+REVIEW:  Agregar btn que elimine 1 elemento a traves de su ID.
