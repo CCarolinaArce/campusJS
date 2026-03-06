@@ -19,6 +19,8 @@ has()
 FormData()
 callbacks()
 asinc-await
+DOM: eventos y selectores del DOM como querySelector y querySelectorAll.
+
 
 Promises: Que son? Es 1 objeto que representa el resultado (exito o fracaso) eventual de una operacion asincrona, permitiendo manejar tareas como peticiones a APIS o lectura de archivos sin bloquear el hilo principal. Actua como marcador de posicion que se resolvera en el futuro, evitando la complejidad de los callbacks.
 
