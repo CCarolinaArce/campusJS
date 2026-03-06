@@ -1,0 +1,27 @@
+#contenedor {
+    border: 2px solid blueviolet;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    #mensaje{
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    }
+    
+    .borde{
+    border: 2px dotted blue;
+    }
+    
+    .fuente{
+    font-family: "Playwrite IN", serif;
+    }
+    
+    .item{
+    padding: 10px;
+    margin: 5px; 
+    }
