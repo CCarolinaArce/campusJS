@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: #f4f6fb;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #4a7cff;
+  }
+  
+  .form-full {
+    grid-column: 1 / span 2;
+  }
+  
+  .preview {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .preview img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  .buttons {
+    grid-column: 1 / span 2;
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background: #4a7cff;
+    color: white;
+  }
+  
+  .btn-secondary {
+    background: #888;
+    color: white;
+  }
+  
+  .btn-edit {
+    background: #ffc107;
+  }
+  
+  .btn-delete {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  th {
+    background: #fafafa;
+  }
+  
+  .contact-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
