@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           font-size: 2rem;
+           width: 100vw;
+           height: 100vw;
+           background-color: lightgray;
+           font-size: 2rem;
+        }
+        .root {
+            border: 2px solid blue;
+            height: 200px;
+            padding: 10px;
+
+        }
+        .parent {
+            border: 2px solid green;
+            height: 180px;
+            padding: 10px;
+        }
+        .child {
+            border: 2px solid red;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="root" data-number = "1">
+        <div class="parent" data-number = "2">
+            <div class="child" data-number = "3">
+                <button data-number="4">Click Me</button>
+            </div>
+        </div>
+    </div>
+    <span></span>
+    <script>
+       const root = document.querySelector('.root');
+       const button = document.querySelector('button');
+        
+       button.addEventListener('click', (event) => {
+        button.dispatchEvent( new CustomEvent('user:message', {
+            detail: {
+                name: 'Campus',
+            },
+            bubbles: true,
+        }))
+       })
+
+       root.addEventListener('user:message', event => {
+        const name = event.detail.name;
+        const number = event.target.dataset.number;
+        console.log`El mensaje recibido de: ${name, number})`;
+
+       }, {capture: true})
+        
+    </script>
+</body>
+</html>
