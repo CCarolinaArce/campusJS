@@ -11,6 +11,7 @@ Debera llevar las siguientes elementos y funciones del menu.
 
 TEMAS A REPASAR:
 
+funciones staticas: get
 new set()
 get()
 sort()
@@ -23,6 +24,13 @@ DOM: eventos y selectores del DOM como querySelector y querySelectorAll.
 EVENTOS Y 'CLICK' 'ONCLICK'....
 Que es e.l burbujeo propiedad .bubble?
 Web Components:  customELement y shadowDOM
+
+        -connectedCallback() y
+        -disconnectedCallback()
+        -adoptedCallback()
+        -attributeChangedCallback()
+
+    TEMPLATES: Son plantillas que permite agrupar etiquetas html.
 
 
 Promises: Que son? Es 1 objeto que representa el resultado (exito o fracaso) eventual de una operacion asincrona, permitiendo manejar tareas como peticiones a APIS o lectura de archivos sin bloquear el hilo principal. Actua como marcador de posicion que se resolvera en el futuro, evitando la complejidad de los callbacks.
@@ -79,8 +87,7 @@ console.log('Genero: ' + genero);
 
 Para que se utiliza el constructor en 1 clase?
 
-
-REVIEW:  Agregar btn que elimine 1 elemento a traves de su ID.
+REVIEW:  Agregar btn que elimine 1 elemento a traves de su ID. Hacer 1 CRUD De productos con componentes personalizados aplicando todo lo que hemos visto en clase.
 
 
 Web Components:  customELement y shadowDOM
