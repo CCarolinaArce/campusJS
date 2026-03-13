@@ -84,10 +84,15 @@ console.log('Genero: ' + genero);
 });
 }
 
-
 Para que se utiliza el constructor en 1 clase?
 
-REVIEW:  Agregar btn que elimine 1 elemento a traves de su ID. Hacer 1 CRUD De productos con componentes personalizados aplicando todo lo que hemos visto en clase.
+**********REVIEW:  Agregar btn que elimine 1 elemento a traves de su ID. Hacer 1 CRUD De productos con componentes personalizados aplicando todo lo que hemos visto en clase.  
+
+    1.Crear 1 Producto
+    2.Cargar 1 producto
+    3.Listar
+    4.ELiminar.
+    5.Actualizar.
 
 
 Web Components:  customELement y shadowDOM
@@ -97,3 +102,38 @@ Web Components:  customELement y shadowDOM
         -disconnectedCallback()
         -adoptedCallback()
         -attributeChangedCallback()
+
+
+AJAX Y XMLHttpRequest:
+    Sirven para realizar peticiones HTTP desde JS, las solicitudes a un dominio diferente pueden enfrentar restristrccione de CORS:  (Cross-Origin Resource Sharing), osea, Politicas de seguridad o restricciones que impiden solicitudes cruzadas entre dominios.
+
+    -Propiedas de XHR:
+        .open -> 
+            Permite preparar una peticion HTTP
+        .setRquestHeadr
+        .send -> 
+            Para enviar las peticiones.
+        .onreadystatechange -> 
+        .responseText
+        .readyState ->  
+            Es 1 valor numerico representado por 1 constante...
+            .UNSENT -> numero que indica en que estado o punto de progreso se encuentra la peticion.
+        .status -> 
+            Codigo de error HTTP de respuesta de la peticion.
+        .statusText -> 
+            Texto con el codigo de error de respuesta, 200, 403, 500
+        .timeout -> 
+            Cuando 1 peticion agota el tiempo maximo.
+        .status Text
+        .withCredentials
+        .load -> 
+        .abort -> 
+            Se dispara cuando 1 peticion se ha completado correctamente.
+        .loadStart -> 
+            Se dispara cuando 1 peticion comienza a cargar datos.
+        .loadend -> 
+        .error
+        . 
+        .progress -> 
+            Se dispara (varias veces) cuando 1 peticion recibe datos.
+        .
